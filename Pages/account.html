@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+    <link rel="stylesheet" href="/Style/account.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header class="p-3 mb-3 border-bottom custom-header" style="background-color: #36B05B; height: 120px;">
+        <div class="container">
+            <nav class="nav d-flex">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                    <img src="/picture/icon.jpg" alt="Icon" width="160" height="100">
+                </a>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="navigation-bar">
+                    <ul>
+                        <li><a href="home.php" style="color: white;">Home</a></li>
+                        <li><a href="#more" style="color: white;">About</a></li>
+                        <li><a href="#" style="color: white;">Features</a></li>
+                        <li><a href="#" style="color: white;">Resources</a></li>
+                        <li>
+                            <form action="logout.php" method="post">
+                                <input type="submit" value="Logout" class="logout" name="logout">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="container3">
+            <div class="home-wrapper d-flex">
+                <div class="user-pic">
+                    <img src="/images/user.svg" width="120px" alt="user">
+                </div>
+                <div class="user-info">
+                    <form action="php/update.php">
+                        <div class="goback">
+                            <a href="home.php" class="btn2">Back to home</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" name="name" placeholder="Name" onfocus="this.blur()">
+                            </div>
+                        </div>
+                        <!-- Other form rows -->
+                        <br><br>
+                        <div>
+                            <a href="update1.php" class="btn">Update</a>
+                        </div>
+                    </form>
+                    <br><br>
+                    <form action="/assets/php/update.php">
+                        <!-- Voucher and other form rows -->
+                        <br><br>
+                        <div>
+                            <a href="update2.php" class="btn">Update</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <!-- Footer content -->
+            </div>
+
+            <div class="footer-center">
+                <!-- Footer content -->
+            </div>
+
+            <div class="footer-right">
+                <!-- Footer content -->
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-company-name">Copyright &copy; All Rights Reserved To <span>Green Circle</span> &reg;
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
